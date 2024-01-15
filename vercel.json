@@ -1,3 +1,15 @@
 {
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/product(.*)",
+      "dest": "index.js"
+    }
+  ],
   "buildCommand": "node app"
 }
