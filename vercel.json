@@ -7,9 +7,9 @@
   ],
   "routes": [
     {
-      "src": "/product(.*)",
+      "src": "/(.*)",
       "dest": "index.js"
     }
   ],
-  "buildCommand": "node app"
+  "buildCommand": "node index"
 }
